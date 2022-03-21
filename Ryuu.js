@@ -3404,17 +3404,7 @@ break
 
 //Fitur Search
 case 'ytsearch':
-reply(`Tunggu Butuh Beberapa Menit!`) 
-get = await fetchJson(`https://jieeapi.herokuapp.com/api/download/ytsearch?query=${c}&apikey=${jieekey}`)
-anu = getBuffer (get.result.thumbnail)
-                    anu1 = `➻ NAME : ${get.result.title}\n`
-                    anu1 += `➻ DURASI : ${get.result.duration}\n`
-                    anu1 += `➻ CHANEL : ${get.result.channel.name}\n`
-                    anu1 += `➻ VIEWS : ${anu.result.views}\n`
-                    anu1 += `➻ DESK : ${anu.result.viewcount}\n`  
-                    Ryuu.sendMessage(from, anu1, image, {caption: anu, quoted: nay1})
-                    break
-break
+reply(`Fitur Ini Sedang dalam Perbaikan :d!`) 
 case 'pinterest':
 if (!c) return reply('yg mau di cari apa?')
 reply(mess.wait) 
