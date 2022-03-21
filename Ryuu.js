@@ -3406,7 +3406,16 @@ break
 case 'ytsearch':
 reply(`Tunggu Butuh Beberapa Menit!`) 
 get = await fetchJson(`https://jieeapi.herokuapp.com/api/download/ytsearch?query=${c}&apikey=${jieekey}`)
-reply(`${get.result}`)
+anu1 = getBuffer(anu.result.data.thumbnail)
+                    anu2 = `➻ NAME : ${anu.result.data.judul}\n`
+                    anu2 += `➻ ID : ${anu.result.data.id}\n`                    
+                    anu2 += `➻ DURASI : ${anu.result.data.duration}\n`
+                    anu2 += `➻ CHANEL : ${anu.result.data.id}\n`
+                    anu2 += `➻ PUBLIC.AT : ${anu.result.data.published_at}\n`
+                    anu2 += `➻ VIEWS : ${anu.result.data.views}\n`
+                    anu2 += `➻ DESK : ${anu.result.data.description}\n`  
+                    nayla.sendMessage(from, anu1, image, {caption: anu2, quoted: nay1})
+                    break
 break
 case 'pinterest':
 if (!c) return reply('yg mau di cari apa?')
