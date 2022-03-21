@@ -3405,7 +3405,7 @@ break
 //Fitur Search
 case 'ytsearch':
 reply(`Tunggu Butuh Beberapa Menit!`) 
-get = await fetchJson(`https://jieeapi.herokuapp.com/api/download/ytsearch?query=${c}&apikey={jieekey}`)
+get = await fetchJson(`https://jieeapi.herokuapp.com/api/download/ytsearch?query=${c}&apikey=${jieekey}`)
 reply(`${get.result}`)
 break
 case 'pinterest':
