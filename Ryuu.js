@@ -2869,11 +2869,11 @@ reply(mess.wait)
 anu = await getBuffer(`https://ryuu-apii.herokuapp.com/api/nsfw/${command}?apikey=${ryukey}`)
 Ryuu.sendMessage(from, anu, image, {quoted: ftrol, caption: `Success By : ${ownername}`})
 break
-case 'bondage':
+case 'bdsm':
 if (!isPrem && !isOwner) return sendButPrem(from, Prem1, Prem2, Prem3, { quoted: ftrol}) 
 if (isBanned) return reply('Kamu Sudah Di banned!')
 reply(mess.wait) 
-anu = await getBuffer(`https://jieeapi.herokuapp.com/apu/nsfw/$command}/?apikey=${jieekey}`)
+anu = await getBuffer(`https://jieeapi.herokuapp.com/api/nsfw/${command}?apikey=${jieekey}`)
 Ryuu.sendMessage(from, anu, image, {quoted: ftrol, caption: `Success By : ${ownername}`})
 break
 
