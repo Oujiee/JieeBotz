@@ -3406,13 +3406,13 @@ break
 case 'ytsearch':
 reply(`Tunggu Butuh Beberapa Menit!`) 
 get = await fetchJson(`https://jieeapi.herokuapp.com/api/download/ytsearch?query=${c}&apikey=${jieekey}`)
-anu = getBuffer ${get.result.{thumbnail}}
-                    anu = `➻ NAME : ${get.result{title}\n`
-                    anu += `➻ DURASI : ${get.result{duration}\n`
-                    anu += `➻ CHANEL : ${get.result.{channel{name}}\n`
-                    anu += `➻ VIEWS : ${anu.result{views}\n`
-                    anu += `➻ DESK : ${anu.result{viewcount}\n`  
-                    Ryuu.sendMessage(from, anu1, image, {caption: anu2, quoted: nay1})
+anu = getBuffer (get.result.thumbnail)
+                    anu1 = `➻ NAME : ${get.result.title}\n`
+                    anu1 += `➻ DURASI : ${get.result.duration}\n`
+                    anu1 += `➻ CHANEL : ${get.result.channel.name}\n`
+                    anu1 += `➻ VIEWS : ${anu.result.views}\n`
+                    anu1 += `➻ DESK : ${anu.result.viewcount}\n`  
+                    Ryuu.sendMessage(from, anu1, image, {caption: anu, quoted: nay1})
                     break
 break
 case 'pinterest':
