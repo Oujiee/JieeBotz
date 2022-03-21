@@ -3406,8 +3406,7 @@ break
 case 'ytsearch':
 reply(`Tunggu Butuh Beberapa Menit!`) 
 get = await fetchJson(`https://jieeapi.herokuapp.com/api/download/ytsearch?query=${c}&apikey=${jieekey}`)
-reply(`${get.result}`)
-anu = getBuffer(get.result{thumbnail})
+anu = getBuffer ${get.result.{thumbnail}}
                     anu = `➻ NAME : ${get.result{title}\n`
                     anu += `➻ DURASI : ${get.result{duration}\n`
                     anu += `➻ CHANEL : ${get.result.{channel{name}}\n`
